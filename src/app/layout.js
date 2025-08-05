@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const marykate = localFont({
+  src: './fonts/marykate-regular.ttf',
+  display: 'swap',
+  variable: '--font-sans',
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${marykate.variable} antialiased`}
       >
         {children}
       </body>
