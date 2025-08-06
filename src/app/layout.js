@@ -3,7 +3,7 @@ import "./styles/globals.css";
 import Navbar from './components/navbar';
 
 const marykate = localFont({ // ini object
-  src: 'app/fonts/marykate-regular.ttf',
+  src: './fonts/Marykate-Regular.ttf',
   display: 'swap',
   variable: '--font-sans',
 })
