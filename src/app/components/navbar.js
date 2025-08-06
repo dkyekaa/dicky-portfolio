@@ -9,12 +9,13 @@ export default function Navbar() {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
+    { label: 'Projects', href: '/projects' },
     { label: 'Contact', href: '/contact' },
   ]
 
   return (
-    <nav className="h-14 bg-linear-to-t from-sky-500 to-indigo-500 text-white px-6 py-4 shadow">
-      <ul className="flex space-x-6">
+    <nav className="h-14 bg-linear-to-t from-sky-500 to-indigo-500 text-white px-6 py-4 shadow-md">
+      <ul className="flex space-x-6 justify-end">
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
