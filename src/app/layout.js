@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         className={`${marykate.variable} antialiased`}
       >
         <Navbar />
-        <main className="p-6">{children}</main>
+        <main className="p-6 bg-slate-900">{children}</main>
       </body>
     </html>
   );
