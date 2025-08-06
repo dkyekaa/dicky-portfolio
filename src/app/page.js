@@ -14,7 +14,7 @@ export default function Home() {
           <div className="tracking-[-.01em] text-6xl">
             Let&apos;s Build <AnimatedText />
           </div>
-          <div className="tracking-[-.01em] text-5xl">
+          <div className="tracking-[-.01em] text-6xl">
             Website With Me
           </div>
         </div>
