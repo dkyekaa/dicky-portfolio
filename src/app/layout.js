@@ -1,7 +1,8 @@
-import localFont from 'next/font/local';
-import "./globals.css";
+import localFont from 'next/font/local'; // ini function expression
+import "./styles/globals.css";
+import Navbar from './components/navbar';
 
-const marykate = localFont({
+const marykate = localFont({ // ini object
   src: './fonts/marykate-regular.ttf',
   display: 'swap',
   variable: '--font-sans',
@@ -18,7 +19,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${marykate.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <main className="p-6">{children}</main>
       </body>
     </html>
   );
