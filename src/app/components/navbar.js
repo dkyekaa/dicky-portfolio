@@ -3,9 +3,10 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import logo from '../logo.svg'
+import logo from '../images/logo.svg'
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react' // ikon hamburger dan close (opsional)
+import { Menu, X } from 'lucide-react'
+import AnimatedImg from '../animatedImg'
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -24,8 +25,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <Image src={logo} alt="Logo" width={150} height={50} />
+          <div>
+            <AnimatedImg />
           </div>
 
           {/* Hamburger Menu (Mobile) */}
