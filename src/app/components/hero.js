@@ -35,12 +35,12 @@ export default function HeroSection(){
                 <div className="flex gap-3 justify-center mt-10">
                     <a target="_blank" href="/Asta.pdf">
                         <button 
-                            className="bg-blue-800 p-3 border-blue-800 border-2 rounded-2xl hover:shadow-blue-300 hover:scale-105 hover:shadow-md cursor-pointer duration-300">
+                            className="bg-white p-3 border-white text-blue-800 border-2 rounded-2xl hover:shadow-blue-300 hover:scale-105 hover:shadow-md cursor-pointer duration-300">
                             Download CV
                         </button>
                     </a>
                     <button 
-                        className="bg-white border-blue-800 border-2 text-blue-800 rounded-2xl p-3 hover:scale-105 hover:bg-blue-800 hover:text-white duration-300 cursor-pointer hover:shadow-blue-300 hover:shadow-md"
+                        className="border-white border-2 text-white rounded-2xl p-3 hover:scale-105 hover:bg-blue-800 hover:text-white duration-300 cursor-pointer hover:shadow-blue-300 hover:shadow-md"
                     >
                         My Projects
                     </button>
