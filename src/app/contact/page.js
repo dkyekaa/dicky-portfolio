@@ -1,6 +1,6 @@
-export default function contactPage () {
+export default function Contact() {
   return (
-    <div>
+    <div className="bg-blue-800">
       <h1> Contact Page </h1>
     </div>
   )

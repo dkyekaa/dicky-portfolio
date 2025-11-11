@@ -6,7 +6,7 @@ export default function AnimatedText() {
   const animatedText = [
     { label: 'a Beautiful' },
     { label: 'an Interactive' },
-    { label: 'a Powerful' },
+    { label: 'a Responsive' },
   ];
 
   const [index, setIndex] = useState(0);
@@ -26,7 +26,7 @@ export default function AnimatedText() {
 
   return (
     <span
-      className={`text-blue-500 transition-opacity duration-500 ${
+      className={`text-white  transition-opacity duration-500 ${
         fade ? 'opacity-0' : 'opacity-100'
       }`}
     >
