@@ -4,6 +4,7 @@ import HeroSection from "./components/hero.js";
 import AboutMe from "./about/page.js";
 import Projects from "./projects/page.js";
 import AppShell from "./layout/AppShell/page.js";
+import Contact from "./contact/page.js";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection/>
         <AboutMe/>
         <Projects/>
+        <Contact/>
       </div>
     </AppShell>
   );

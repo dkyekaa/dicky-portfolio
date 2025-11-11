@@ -40,7 +40,7 @@ export default function HeroSection(){
                         </button>
                     </a>
                     <button 
-                        className="border-white border-2 text-white rounded-2xl p-3 hover:scale-105 hover:bg-blue-800 hover:text-white duration-300 cursor-pointer hover:shadow-blue-300 hover:shadow-md"
+                        className="border-white border-2 text-white rounded-2xl p-3 hover:scale-105 hover:bg-white hover:text-blue-800 duration-300 cursor-pointer hover:shadow-blue-300 hover:shadow-md"
                     >
                         My Projects
                     </button>
