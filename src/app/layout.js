@@ -1,6 +1,5 @@
 import localFont from 'next/font/local'; // ini function expression
 import "./styles/globals.css";
-import ParticlesBackground from './components/ParticlesBackground';
 
 const marykate = localFont({ // ini object
   src: './fonts/Marykate-Regular.ttf',
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${marykate.variable} antialiased`}
       >
-        <ParticlesBackground/>
       {children}
       </body>
     </html>

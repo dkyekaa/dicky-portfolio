@@ -58,7 +58,7 @@ export default function EmailForm() {
   };
     return(
         <>
-<div className="bg-white rounded-2xl shadow-xl p-8">
+<div className="bg-white rounded-2xl shadow-xl p-8" id='contact'>
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">
               Get in Touch.

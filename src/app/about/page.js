@@ -2,10 +2,17 @@
 
 import { act, useState } from "react";
 import Image from "next/image";
+import Slider from "react-slick";
 
 export default function AboutMe() {
   const [activeMenu, setActiveMenu] = useState('about');
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="text-black p-15 text-[19px] text-center" id="about">
@@ -64,14 +71,19 @@ export default function AboutMe() {
       </div>
     )}
     { activeMenu == 'experience' && (
-      <div className="mt-7 ">
-        <ul>
-          <li>
-            <h1>PT.Digital Access Indonesia</h1>
-            <h2>Fullstack Developer Intern</h2>
-            <Image src="/window.svg" alt="daiportfolio" width={10} height={10} />
-          </li>
-        </ul>
+      <div className="mt-7 flex flex-col md:flex-row justify-center items-center gap-6 bg-gradient-to-r from-blue-500 to-blue-800 p-6 rounded-xl shadow-xl">
+        <div className="flex-1 rounded-2xl text-white">
+          <h1 className="text-2xl font-bold mb-2">PT. Digital Access Indonesia</h1>
+          <h2 className="text-lg font-semibold">Fullstack Developer Intern</h2>
+          <p className="text-lg font-semibold">(July 2025 - September 2025)</p>
+        </div>
+        <Image
+          src="/assets/dai-internship.jpeg"
+          alt="daiportfolio"
+          width={500}
+          height={300}
+          className="rounded-2xl object-cover shadow-md"
+        />
       </div>
     )}
     </div>

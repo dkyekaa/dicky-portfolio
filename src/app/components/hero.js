@@ -1,8 +1,6 @@
 'use client'
 import { useEffect,useRef } from "react";
-import AnimatedText from "./animatedText"
 import Typed from "typed.js"
-import { DownloadIcon } from "lucide-react";
 
 export default function HeroSection(){
     const el = useRef(null);
@@ -33,7 +31,7 @@ export default function HeroSection(){
                     Website With Me
                 </div>
                 <div className="flex gap-3 justify-center mt-10">
-                    <a target="_blank" href="/Asta.pdf">
+                    <a target="_blank" href="/assets/CV_Dicky_Eka_Prasetya.pdf">
                         <button 
                             className="bg-white p-3 border-white text-blue-800 border-2 rounded-2xl hover:shadow-blue-300 hover:scale-105 hover:shadow-md cursor-pointer duration-300">
                             Download CV
